@@ -1,0 +1,11 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "jimao-finance"
+compatibility_date = "2023-05-18"
+main = "./build/worker/index.js"
+assets = { directory = "./build/client" }
+
+# Workers Logs
+# Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
+# Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
+[observability]
+enabled = true
