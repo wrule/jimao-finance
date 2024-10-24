@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
+import { Header } from "~/components/Header";
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,5 +9,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return <div>主页</div>;
+  return <div>
+    <Header />
+  </div>;
 }
