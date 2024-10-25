@@ -1,3 +1,4 @@
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 export
 function Header() {
@@ -17,6 +18,7 @@ function Header() {
           理财
         </li>
       </ul>
+      <ConnectButton />
     </nav>
   </header>;
 }
