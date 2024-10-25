@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
-import { Header } from "~/components/Header";
+import { Header } from "@/components/Header";
 import { createChart, IChartApi } from 'lightweight-charts';
 import { useEffect, useRef } from "react";
 
