@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/cloudflare";
 import { Header } from "@/components/Header";
 import { createChart, IChartApi } from 'lightweight-charts';
 import { useEffect, useRef } from "react";
+import { Button } from "@/components/ui/button";
 
 export const meta: MetaFunction = () => {
   return [
@@ -36,5 +37,8 @@ export default function Index() {
   return <div>
     <Header />
     <div ref={chartDOM}></div>
+    <div>
+      <Button onClick={() => alert('你好，世界')}>你好，世界</Button>
+    </div>
   </div>;
 }
